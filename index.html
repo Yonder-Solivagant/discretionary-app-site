@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Discretionary · 邮件归档助手</title>
+<style>
+  :root { --fg: #1a1c1f; --muted: #5b6168; --line: #e3e6e9; --accent: #14508c; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 48px 20px 72px; color: var(--fg); background: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                 "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+    font-size: 16px; line-height: 1.75;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 28px; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 0 0 32px; font-size: 15px; }
+  h2 { font-size: 19px; margin: 36px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 22px; margin: 0 0 12px; }
+  code { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 14px;
+         background: #f4f6f8; padding: 1px 5px; border-radius: 3px; }
+  a { color: var(--accent); }
+  .box { background: #f7f9fb; border: 1px solid var(--line); border-radius: 6px; padding: 16px 18px; margin: 20px 0; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: 14px; }
+  .en { color: var(--muted); font-size: 15px; }
+</style>
+</head>
+<main>
+<h1>Discretionary</h1>
+<p class="sub">个人自用的投资资讯邮件归档助手 · Personal email archiving tool</p>
+
+<h2>这个应用做什么</h2>
+<p>
+Discretionary 是一个运行在开发者个人电脑上的脚本工具。它通过 Google Gmail API
+以<strong>只读</strong>方式读取开发者本人 Gmail 收件箱中、由开发者自己订阅的资讯邮件，
+把这些邮件的正文另存为本地 Markdown 文本文件，便于长期检索与复盘。
+</p>
+<div class="box">
+  <p style="margin:0"><strong>数据访问范围：</strong>
+  <code>https://www.googleapis.com/auth/gmail.readonly</code>（只读，不发送、不删除、不修改、不打标签）。</p>
+</div>
+
+<h2>谁在使用</h2>
+<p>
+本应用为单一用户的私人工具，未面向公众分发，也没有任何服务端、数据库或第三方托管的
+数据存储。授权对象仅为开发者本人的 Google 账户。
+</p>
+
+<h2>相关链接</h2>
+<ul>
+  <li><a href="./privacy.html">隐私政策 / Privacy Policy</a></li>
+</ul>
+
+<h2 class="en">In short (English)</h2>
+<p class="en">
+Discretionary is a personal, locally-run script that reads the developer's own Gmail
+inbox in read-only mode (<code>gmail.readonly</code>) and saves the body of newsletters the
+developer subscribed to into local Markdown files. There is no server, no database, no
+third-party data sharing, and no distribution to other users.
+</p>
+
+<footer>
+  开发者 / Operator：余宇轩（Yuxuan Yu）<br>
+  联系邮箱 / Contact：<a href="mailto:yyx20031104@gmail.com">yyx20031104@gmail.com</a><br>
+  最后更新 / Last updated：2026-10-12
+</footer>
+</main>
+</html>

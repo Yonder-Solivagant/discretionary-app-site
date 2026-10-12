@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 · Discretionary</title>
+<style>
+  :root { --fg: #1a1c1f; --muted: #5b6168; --line: #e3e6e9; --accent: #14508c; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 48px 20px 72px; color: var(--fg); background: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                 "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+    font-size: 16px; line-height: 1.75;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 0 0 32px; font-size: 15px; }
+  h2 { font-size: 18px; margin: 32px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 22px; margin: 0 0 12px; }
+  code { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 14px;
+         background: #f4f6f8; padding: 1px 5px; border-radius: 3px; }
+  a { color: var(--accent); }
+  .box { background: #f7f9fb; border: 1px solid var(--line); border-radius: 6px; padding: 16px 18px; margin: 20px 0; }
+  .box p:last-child { margin-bottom: 0; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: 14px; }
+  .en { color: var(--muted); font-size: 15px; }
+</style>
+</head>
+<main>
+<h1>隐私政策</h1>
+<p class="sub">Privacy Policy · 生效日期 2026-10-12</p>
+
+<div class="box">
+  <p><strong>一句话概括：</strong>Discretionary 是开发者本人使用的本地脚本，只以只读方式访问开发者
+  自己 Gmail 里的邮件，把正文另存到开发者自己的电脑上。没有服务器，没有数据库，不与任何第三方共享数据。</p>
+</div>
+
+<h2>1. 适用范围</h2>
+<p>
+本政策适用于 Discretionary 应用（OAuth 客户端项目 <code>gmail-511205</code>）通过 Google
+Gmail API 进行的访问行为。本应用不面向公众分发，唯一的授权用户是开发者本人。
+</p>
+
+<h2>2. 我们访问哪些数据</h2>
+<p>本应用仅申请并使用以下一项最小范围的权限：</p>
+<ul>
+  <li><code>https://www.googleapis.com/auth/gmail.readonly</code> —— 读取邮件列表与邮件正文。</li>
+</ul>
+<p>具体操作仅限于：按发件人地址检索开发者自己订阅的资讯邮件、读取这些邮件的正文内容。
+本应用<strong>不会</strong>发送、转发、回复、删除、归档、修改标签或以任何方式写入邮箱，
+也不会访问云端硬盘、通讯录、日历或任何其他 Google 服务的数据。</p>
+
+<h2>3. 数据如何使用与存储</h2>
+<p>
+读取到的邮件正文会被另存为本地文本文件，保存在开发者自己的个人电脑上，用于个人投资研究的归档与检索。
+本应用<strong>没有任何服务端</strong>：不存在数据上传、远程数据库、云存储、后台同步或跨设备传输。
+除开发者本机之外，没有任何一方能够访问这些内容。
+</p>
+
+<h2>4. 我们不做的事</h2>
+<ul>
+  <li>不向任何第三方出售、出租、交易或披露数据；</li>
+  <li>不投放广告，不做用户画像或行为定向；</li>
+  <li>不收集除上述邮件内容之外的任何个人信息，不使用 Cookie，不嵌入分析或追踪代码；</li>
+  <li>不进行与上述用途无关的任何数据处理。</li>
+</ul>
+<p>邮件本身由发件方按 Google 隐私政策处理，本政策不改变 Google 对其平台的处理规则。</p>
+
+<h2>5. 授权与撤销</h2>
+<p>
+访问权限通过 Google OAuth 2.0 授予，仅在开发者主动同意后生效，且严格限定在只读范围内。
+开发者可随时撤销授权，无需联系本应用：
+</p>
+<ul>
+  <li>前往 <a href="https://myaccount.google.com/permissions">Google 账号 → 安全性 → 第三方拥有访问权限的网站或应用</a>，
+  找到 Discretionary 并移除访问权限；</li>
+  <li>或修改 Google 账号密码，使已签发的令牌失效。</li>
+</ul>
+<p>授权撤销后，本应用立即无法再读取任何邮件数据。</p>
+
+<h2>6. 数据保留与删除</h2>
+<p>
+所有已归档的文本文件由开发者在本机自行管理，随时可直接删除，删除后不留副本。
+本应用不保存任何日志、备份或缓存副本于其他位置。
+</p>
+
+<h2>7. 儿童隐私</h2>
+<p>本应用为个人自用工具，不面向公众提供服务，不主动收集任何未成年人信息。</p>
+
+<h2>8. 政策变更</h2>
+<p>
+若本应用的用途或数据访问范围发生变化（例如申请新的权限范围），将更新本页并修改下方的生效日期。
+页面顶部的日期即为当前版本生效日期。
+</p>
+
+<h2>9. 联系我们</h2>
+<p>
+对本政策有任何疑问，可联系：余宇轩（Yuxuan Yu）
+· <a href="mailto:yyx20031104@gmail.com">yyx20031104@gmail.com</a>
+· <a href="./">应用首页</a>
+</p>
+
+<h2 class="en">Privacy Policy (English summary)</h2>
+<p class="en">
+Discretionary is a personal, locally-run script used solely by its developer. It requests one
+OAuth scope only — <code>gmail.readonly</code> — and uses it to retrieve newsletters the developer
+subscribed to in the developer's own Gmail account, saving their text bodies to the developer's
+own computer for personal research archiving. The app has no server, no database, no cloud
+storage, and no cross-device sync. It does not send, delete, or modify mail, does not access any
+other Google service, does not share, sell, or disclose data to any third party, does not serve
+advertising, and does not use cookies, analytics, or tracking of any kind.
+Access can be revoked at any time from
+<a href="https://myaccount.google.com/permissions">Google account permissions</a> or by changing
+the account password. All archived files are stored locally and can be deleted directly by the
+developer. Effective date: 2026-10-12. Contact: <a href="mailto:yyx20031104@gmail.com">yyx20031104@gmail.com</a>.
+</p>
+
+<footer>
+  开发者 / Operator：余宇轩（Yuxuan Yu）<br>
+  联系邮箱 / Contact：<a href="mailto:yyx20031104@gmail.com">yyx20031104@gmail.com</a><br>
+  生效日期 / Effective：2026-10-12
+</footer>
+</main>
+</html>
